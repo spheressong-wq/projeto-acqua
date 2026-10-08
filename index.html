@@ -8,89 +8,62 @@
     <meta name="author" content="Leila Cristina">
     <title>Projeto Acqua</title>
 
-     <style>
-        body{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background-color: black;
-        }
-
-        section{
-            padding: 20px;
-            background-color: cadetblue;
-            border-radius: 20px;
-            border-color: blue;
-            border-width: 2px;
-            border-style: solid;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            color: azure;
-        }
-    </style>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <header>
-        <h1>O que é o CSS?</h1>
-        <p> O  <strong> CSS </strong> significa Cascading Style Sheets, ou Folhas de estilo em cascata. </p>
-    </header>
-
-    <main>
-
-        <section>
-            <h2> Sobre o CSS </h2>
-            <p> Linguagem responsável por definir a aparência visual e organização dos elementos na tela. </p>
+        <main>
+        <!-- 1° Sessão -->
+        <section class="section-contador">
+            <div class="contador">
+                <div>
+                    <p>45</p>
+                    <p>dias</p>
+                </div>
+                <div>
+                    <p>10</p>
+                    <p>horas</p>
+                </div>
+                <div>
+                    <p>24</p>
+                    <p>minutos</p>
+                </div>
+                <div>
+                    <p>50</p>
+                    <p>segundos</p>
+                </div>
+            </div>
         </section>
 
+        <!-- Sessão 2 -->
         <section>
-            <h2> Como aplicar o CSS? </h2>
-            <p> Para o CSS, temos três abordagens. </p>
+            <h2>Prédio Acqua</h2>
+            <p>Receba novidades sobre nosso lançamento.</p>
+            <p>Morar contemporâneo para pessoas com estilo de vida dinâmico e que buscam praticidade no seu dia a dia. Lazer, esporte, trabalho e contato com a natureza em um só lugar.</p>
+
+            <form action="email"> Email </form>
+            <input type="email" name="email" id="email" placeholder="Digite seu email..." autocomplete="email">
+        </section>
+
+        <!-- Sessão -->
+        <section>
+            <h2></h2>
+            <p></p>
+
             <ul>
-                <li> <strong> CSS Inline </strong> </li>
-                <li> <strong> CSS Interno </strong> </li>
-                <li> <strong> CSS Externo </strong> </li>
+                <li><img src="imagens/Img_1.png" alt="Projeto 1"></li>
+                <li><img src="imagens/Img_2.png" alt="Projeto 2"></li>
+                <li><img src="imagens/Img_3.png" alt="Projeto 3"></li>
+                <li><img src="imagens/Img_4.png" alt="Projeto 4"></li>
+                <li><img src="imagens/Img_5.png" alt="Projeto 5"></li>
+                <li><img src="imagens/Img_6.png" alt="Projeto 6"></li>
             </ul>
         </section>
-
-        <section>
-            <h2> O que da pra fazer com o CSS? </h2>
-            <p> O CSS Não serve apenas para colocar cor na página. Ele controla: </p>
-            <ul>
-                <li> <strong> cores </strong> </li>
-                <li> <strong> fontes </strong> </li>
-                <li> <strong> tamanhos </strong> </li>
-                <li> <strong> espaçamenstos </strong> </li>
-                <li> <strong> sombras </strong> </li>
-                <li> <strong> bordas </strong> </li>
-                <li> <strong> posicionamento </strong> </li>
-                <li> <strong> responsividade </strong> </li>
-                <li> <strong> animações </strong> </li>
-                <li> <strong> transições </strong> </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2> Aplicando o CSS Inline </h2>
-
-            <p style="color:aquamarine;font-size: 20px;"> Nessa aboredagem, o CSS é colocado diretamente no elemento <strong style="background-color: blueviolet;"> HTML </strong> através do atributo <code style="background-color: darkgray;"> style </code> </p>
-        </section>
-
-        <section>
-            <h2> Aplicando o CSS Interno </h2>
-            <p> Nessa abordagem, o CSS é aplicado dentro de uma tag <code> &lt; style &gl;</code> dentro do <code> &lt; head &gl;</code> do documento HTML. </p>
-        </section>
-
-        <section>
-            <h2> Aplicando o CSS Externo </h2>
-            <p> Nessa abordagem, os estilos do CSS ficam concentrados em um arquivo separado. </p>
-
-            <p> Para conectar esses arquivo ao HTML, utilizamos o link no &lt; head &gl; da pagina </p>
-        </section>
-
     </main>
-
+    
 </body>
 </html>

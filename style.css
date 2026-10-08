@@ -1,13 +1,54 @@
+:root{
+    --fonte-primaria: "Poppins", sans-serif;
+  
+    /* Cores */
+    --cor-principal: #FFFFFF;
+    --cor-secundaria:  #F1F1F1;
+
+    --cor-texto: #1c1c1c;
+    --cor-texto-secundaria: #F1F1F1;
+
+    --cor-overlay: #00000085;
+
+    --cor-gradient: linear-gradient(to right, #34495E, #327AFF );
+}
+
+/* Limpando estilos padrões do navegador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+}
+
+/* Definindo estilos gerais */
 body{
-    background-color: #c6c6c6;
-    color: #1d1d1d;
-    font-family:  Verdana, Geneva, Tahoma, sans-serif ;
+    font-family: var(--fonte-primaria);
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+}
+.section-contador{
+    background-image: url("imagens/Img_5.png");
+    height: 80dvh;
 }
 
-h1{
-    font-size: 20px;
+/* Puxa a classe "contador" */
+.contador{
+    height: 100%;
+    background-color: var(--cor-overlay);
+
+    display: flex;
+    align-items: center; /* Alinha os elementos no eixo y (vertical) */
+    justify-content: space-around; /* Alinha os elementos no eixo x (hotizontal) */
 }
 
-h2{
-    font-size: 32;
+/* Puxa a o elemento "<p>" da class "contador" */
+.contador p{
+    color: var(--cor-texto-secundaria);
+}
+
+/* QG - arrumar dps */
+img{
+    max-width: 100%;
 }
